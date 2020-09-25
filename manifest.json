@@ -1,0 +1,18 @@
+{
+  "vendor": "CHANGE_ME",
+  "name": "",
+  "version": "0.0.1",
+  "title": "CHANGE_ME",
+  "description": "Made with create-react-library",
+  "vtexComponentsEnabled": true,
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
