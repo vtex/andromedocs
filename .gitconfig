@@ -1,0 +1,5 @@
+[merge]
+  tool = vscode
+  rebase = true
+[pull]
+  rebase = true
