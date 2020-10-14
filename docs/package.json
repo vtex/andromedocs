@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "docs",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^2.24.67",
+    "andromedocs-theme": "*",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

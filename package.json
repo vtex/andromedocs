@@ -1,6 +1,12 @@
 {
-    "private": true,
-    "workspaces": [
-        "theme"
-    ]
+  "name": "andromedocs",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "yarn workspace example build"
+  },
+  "workspaces": [
+    "andromedocs-theme",
+    "docs"
+  ]
 }
