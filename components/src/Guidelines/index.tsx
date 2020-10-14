@@ -1,55 +1,54 @@
 import React, { ReactNode } from 'react'
-import { Styled, Text as ThemeUIText } from 'theme-ui'
-import { Box } from 'theme-ui'
+import { Flex, Box, Styled, Text as ThemeUIText } from 'theme-ui'
 
-export const Guidelines = ({ children }: ListProp) => (
+export const Guidelines = ({ children }: Prop) => (
     <Box>
         {children}
     </Box>
 )
 
-const Dos = ({ children, title, icon }: ListProps) => (
-    <ThemeUIText
+const Dos = ({ children, icon = '✅', title = 'Dos' }: Props) => (
+
+    <GuidelinesList icon={icon} title={title} children={children}/>
+)
+
+const Donts = ({ children, icon = '❌', title = 'Donts' }: Props) => (
+
+    <GuidelinesList icon={icon} title={title} children={children}/>
+)
+
+const GuidelinesList = ({ children, icon, title }: Props) => (
+
+    <Box
         sx={{
             fontFamily: 'sans serif',
             lineHeight: 2,
-            letterSpacing: 1,
 
         }}>
-
-        <ThemeUIText as="h3">{icon}{title}</ThemeUIText>
+        <Flex>
+            {icon}
+            <ThemeUIText as="h3"
+                sx={{
+                    textTransform: 'uppercase',
+                    marginLeft: '0.5rem'
+                }}>
+                {title}
+            </ThemeUIText>
+        </Flex>
         <Styled.ul>
             {children}
         </Styled.ul>
-
-    </ThemeUIText>
+    </Box>
 )
 
-const Donts = ({ children, title, icon }: ListProps) => (
-    <ThemeUIText
-        sx={{
-            fontFamily: 'sans serif',
-            lineHeight: 2,
-            letterSpacing: 1,
-        }}>
-
-        <ThemeUIText as="h3">{icon}{title}</ThemeUIText>
-        <Styled.ul>
-            {children}
-        </Styled.ul>
-
-    </ThemeUIText>
-)
-
-interface ListProps {
-    children: ReactNode
-    icon: ReactNode
+interface Props {
+    children?: ReactNode
+    icon?: ReactNode
     title: string
 }
 
-interface ListProp {
-    children: ReactNode
-
+interface Prop {
+    children?: ReactNode
 }
 
 Guidelines.Dos = Dos
