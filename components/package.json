@@ -53,7 +53,6 @@
   ],
   "private": true,
   "dependencies": {
-    "@types/theme-ui": "^0.3.7",
     "reakit": "^1.2.5",
     "theme-ui": "^0.3.1"
   },
