@@ -1,5 +1,5 @@
 {
-  "name": "theme",
+  "name": "andromedocs-theme",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -15,8 +15,10 @@
   },
   "devDependencies": {
     "gatsby": "^2.24.67",
+    "gatsby-plugin-theme-ui": "^0.3.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "theme-ui": "^0.3.1"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.18",

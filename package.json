@@ -1,9 +1,9 @@
 {
-  "name": "andromedocs",
+  "name": "andromedocs-theme",
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "build": "yarn workspace example build"
+    "build": "yarn workspace docs build"
   },
   "workspaces": [
     "andromedocs-theme",
