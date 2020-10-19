@@ -2,9 +2,9 @@ import React from 'react'
 import Guidelines from './index'
 
 export default {
-  title: "Guidelines",
-  component: Guidelines
-} 
+  title: 'Guidelines',
+  component: Guidelines,
+}
 
 export const GuidelinesList = () => (
   <Guidelines>
