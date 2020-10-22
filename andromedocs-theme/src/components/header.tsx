@@ -1,7 +1,23 @@
-import React from 'react'
+import React from "react";
+import { Box, Flex } from "theme-ui";
+import Logo from "./logo";
 
 const Header = () => (
-    <div>Header</div>
-)
+  <>
+    <Flex
+      sx={{
+        height: "80px",
+        backgroundColor: "muted.5",
+        alignItems: "center",
+        borderBottom: "solid",
+        borderBottomColor: "muted.3",
+        borderBottomWidth: 1,
+        paddingLeft: 19,
+      }}
+    >
+      <Logo />
+    </Flex>
+  </>
+);
 
 export default Header;
