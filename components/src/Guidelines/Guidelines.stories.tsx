@@ -11,6 +11,7 @@ export const GuidelinesList = () => (
     <Guidelines.Dos icon={'✅'} title="Dos">
       <li>Do this!</li>
       <li>Do that!</li>
+      <li>Do that!</li>
     </Guidelines.Dos>
     <Guidelines.Donts icon={'❌'} title="Dont's">
       <li>NEVER do this!</li>

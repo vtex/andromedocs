@@ -1,5 +1,7 @@
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import React, { ReactNode } from 'react'
-import { Flex, Box, Styled, Text as ThemeUIText } from 'theme-ui'
+import { Flex, Divider, Box, Text as ThemeUIText } from 'theme-ui'
 
 export const Guidelines = ({ children }: Prop) => <Box>{children}</Box>
 
@@ -11,31 +13,26 @@ const Donts = ({ children, icon = '❌', title = 'Donts' }: Props) => (
   <GuidelinesList icon={icon} title={title} children={children} />
 )
 
-const GuidelinesList = ({ children, icon, title }: Props) => (
-  <Box
-    sx={{
-      fontFamily: 'sans serif',
-      lineHeight: 2,
-    }}
-  >
+
+const GuidelinesList = ({ children, icon, title }: Props) => {
+
+    return (
+  <Box variant = 'guidelines.list' >
     <Flex>
       {icon}
       <ThemeUIText
         as="h3"
-        sx={{
-          textTransform: 'uppercase',
-          marginLeft: '0.5rem',
-        }}
+        variant = 'guidelines.titles'
       >
         {title}
       </ThemeUIText>
     </Flex>
-    <Styled.ul>{children}</Styled.ul>
-  </Box>
+    <ul sx= {{listStyleType: "none", paddingX: '30px' }}>{children.map(child => <React.Fragment>{child}<Divider variant ='guidelines.divider'/></React.Fragment> )}</ul>
+  </Box>            
 )
-
+}
 interface Props {
-  children?: ReactNode
+  children: ReactNode[]
   icon?: ReactNode
   title: string
 }
