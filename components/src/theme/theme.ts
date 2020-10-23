@@ -47,6 +47,25 @@ export const theme = {
       contrast: '#FFFFFF',
     },
   },
+  guidelines: {
+    list: {
+      fontFamily: 'sans serif',
+      lineHeight: 'action',
+      width: 857,
+      marginLeft: '0.5rem',
+      fontSizes: 4,
+    },
+    divider: { 
+      borderColor: 'muted.3',
+      marginY: 4
+    },
+    titles: {
+      textTransform: 'uppercase',
+      marginLeft: '3',
+      fontSizes: 3,
+      lineHeight: 'action'
+    }
+  },
   fonts: {
     body: 'sans-serif',
     heading: 'sans-serif',
