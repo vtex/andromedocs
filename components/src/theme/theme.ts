@@ -50,22 +50,23 @@ export const theme = {
   guidelines: {
     list: {
       fontFamily: 'sans serif',
+      color: 'muted.0',
       lineHeight: 'action',
       marginLeft: 3,
       fontSize: 2,
-      paddingTop: 3
+      paddingTop: 3,
     },
-    divider: { 
+    divider: {
       borderColor: 'muted.3',
-      marginY: 4
+      marginY: 4,
     },
     titles: {
       textTransform: 'uppercase',
       marginLeft: 3,
       fontSize: 3,
       lineHeight: 'action',
-      fontColor: 'muted.0'
-    }
+      color: 'text',
+    },
   },
   fonts: {
     body: 'sans-serif',
