@@ -51,9 +51,9 @@ export const theme = {
     list: {
       fontFamily: 'sans serif',
       lineHeight: 'action',
-      width: 857,
-      marginLeft: '0.5rem',
-      fontSizes: 4,
+      marginLeft: 3,
+      fontSize: 2,
+      paddingTop: 3
     },
     divider: { 
       borderColor: 'muted.3',
@@ -61,9 +61,10 @@ export const theme = {
     },
     titles: {
       textTransform: 'uppercase',
-      marginLeft: '3',
-      fontSizes: 3,
-      lineHeight: 'action'
+      marginLeft: 3,
+      fontSize: 3,
+      lineHeight: 'action',
+      fontColor: 'muted.0'
     }
   },
   fonts: {

@@ -27,7 +27,7 @@ const GuidelinesList = ({ children, icon, title }: Props) => {
         {title}
       </ThemeUIText>
     </Flex>
-    <ul sx= {{listStyleType: "none", paddingX: '30px' }}>{children.map(child => <React.Fragment>{child}<Divider variant ='guidelines.divider'/></React.Fragment> )}</ul>
+    <ul sx= {{listStyleType: "none", paddingLeft: '28px' }}>{children.map(child => <React.Fragment>{child}<Divider variant ='guidelines.divider'/></React.Fragment> )}</ul>
   </Box>            
 )
 }
