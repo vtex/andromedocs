@@ -5,12 +5,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
   if (node.internal.type === "Mdx") {
-    const value = createFilePath({ node, getNode });
+    const slug = node.frontmatter.slug || createFilePath({ node, getNode });
 
     createNodeField({
       name: "slug",
       node,
-      value: `${value}`,
+      value: `${slug}`,
     });
   }
 };
@@ -43,7 +43,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/components/templates/docs.tsx`),
-      context: { id: node.id },
+      context: { id: node.id, slug: node.fields.slug },
     });
   });
 };
