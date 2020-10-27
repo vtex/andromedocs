@@ -42,7 +42,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   posts.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/components/layout/layout.tsx`),
+      component: path.resolve(`./src/components/templates/docs.tsx`),
       context: { id: node.id },
     });
   });
