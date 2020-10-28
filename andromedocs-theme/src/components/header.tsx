@@ -12,7 +12,7 @@ const Header = () => (
         borderBottom: "solid",
         borderBottomColor: "muted.3",
         borderBottomWidth: 1,
-        paddingLeft: 19,
+        paddingLeft: 20,
       }}
     >
       <Logo />
