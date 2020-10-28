@@ -6,13 +6,11 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "../layout/layout";
 
 const Docs = ({ data: { mdx } }) => (
-  <>
-    <Layout title={mdx.frontmatter.title}>
-      <MDXProvider>
-        <MDXRenderer>{mdx.body}</MDXRenderer>
-      </MDXProvider>
-    </Layout>
-  </>
+  <Layout title={mdx.frontmatter.title}>
+    <MDXProvider>
+      <MDXRenderer>{mdx.body}</MDXRenderer>
+    </MDXProvider>
+  </Layout>
 );
 
 export const pageQuery = graphql`
