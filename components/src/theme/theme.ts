@@ -1,3 +1,5 @@
+import statusTag from './components/statusTag'
+
 export const theme = {
   colors: {
     text: '#4A4A4A',
@@ -68,6 +70,7 @@ export const theme = {
       color: 'text',
     },
   },
+  statusTag, 
   fonts: {
     body: 'sans-serif',
     heading: 'sans-serif',
