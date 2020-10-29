@@ -1,4 +1,3 @@
-const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -42,7 +41,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   posts.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/components/templates/docs.tsx`),
+      component: require.resolve(`./src/components/templates/docs.tsx`),
       context: { id: node.id, slug: node.fields.slug },
     });
   });

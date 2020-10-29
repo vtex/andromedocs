@@ -3,8 +3,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `docs`,
-        path: `${__dirname}/src/documentation/`,
+        ignore: [`**/\.*`, `**/public/**/*`, `**/node_modules/`],
+        path: `./`,
       },
     },
     `gatsby-plugin-mdx`,
