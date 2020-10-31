@@ -7,9 +7,11 @@ export default {
 }
 
 export const Deprecated = () => (
-  <StatusTag variant="deprecated">deprecated</StatusTag>
+<StatusTag variant= 'deprecated'/>
 )
-export const Stable = () => <StatusTag variant="stable">stable</StatusTag>
+export const Stable = () => (
+  <StatusTag variant= 'stable'/>
+)
 export const Experimental = () => (
-  <StatusTag variant="experimental">experimental</StatusTag>
+  <StatusTag variant= 'experimental'/>
 )
