@@ -70,7 +70,7 @@ export const theme = {
       color: 'text',
     },
   },
-  statusTag, 
+  statusTag,
   fonts: {
     body: 'sans-serif',
     heading: 'sans-serif',

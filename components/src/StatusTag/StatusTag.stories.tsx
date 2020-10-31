@@ -1,4 +1,4 @@
-import React, {} from 'react'
+import React from 'react'
 import StatusTag from './index'
 
 export default {
@@ -7,11 +7,9 @@ export default {
 }
 
 export const Deprecated = () => (
-<StatusTag variant= 'deprecated'>deprecated</StatusTag>
+  <StatusTag variant="deprecated">deprecated</StatusTag>
 )
-export const Stable = () => (
-  <StatusTag variant= 'stable'>stable</StatusTag>
-)
+export const Stable = () => <StatusTag variant="stable">stable</StatusTag>
 export const Experimental = () => (
-  <StatusTag variant= 'experimental'>experimental</StatusTag>
+  <StatusTag variant="experimental">experimental</StatusTag>
 )
