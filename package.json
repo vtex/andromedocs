@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "build": "yarn workspace docs build"
+    "build": "yarn workspace docs build",
+    "develop:theme": "yarn --cwd andromedocs-theme/ develop",
+    "storybook:components": "yarn --cwd components/ storybook"
   },
   "workspaces": [
     "andromedocs-theme",
