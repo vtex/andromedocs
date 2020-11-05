@@ -8,7 +8,7 @@ This project has not been deployed yet, so it cannot be imported directly at the
 
 ## Contributing
 
-We have a few issue templates: there is one for bug reports, another for feature suggestions, and, finally, a specific template for new component proposals.
+Refer to our [contributing guidelines](./CONTRIBUTING.md).
 
 ## Components
 
