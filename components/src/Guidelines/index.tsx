@@ -1,16 +1,19 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
-import React, { ReactNode } from 'react'
-import { Flex, Divider, Box, Text as ThemeUIText } from 'theme-ui'
+import { ReactNode } from 'react'
+import { jsx, Flex, Divider, Box, Text as ThemeUIText } from 'theme-ui'
 
 export const Guidelines = ({ children }: Prop) => <Box>{children}</Box>
 
 const Dos = ({ children, icon = '✅', title = 'Dos' }: Props) => (
-  <GuidelinesList icon={icon} title={title} children={children} />
+  <GuidelinesList icon={icon} title={title}>
+    {children}
+  </GuidelinesList>
 )
 
 const Donts = ({ children, icon = '❌', title = 'Donts' }: Props) => (
-  <GuidelinesList icon={icon} title={title} children={children} />
+  <GuidelinesList icon={icon} title={title}>
+    {children}
+  </GuidelinesList>
 )
 
 const GuidelinesList = ({ children, icon, title }: Props) => {
@@ -23,16 +26,17 @@ const GuidelinesList = ({ children, icon, title }: Props) => {
         </ThemeUIText>
       </Flex>
       <ul sx={{ listStyleType: 'none', paddingLeft: '28px', marginTop: 3 }}>
-        {children.map((child) => (
-          <React.Fragment>
+        {children.map((child, index) => (
+          <Box key={index}>
             {child}
             <Divider variant="guidelines.divider" />
-          </React.Fragment>
+          </Box>
         ))}
       </ul>
     </Box>
   )
 }
+
 interface Props {
   children: ReactNode[]
   icon?: ReactNode

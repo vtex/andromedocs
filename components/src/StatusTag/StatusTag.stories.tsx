@@ -1,4 +1,5 @@
 import React from 'react'
+
 import StatusTag from './index'
 
 export default {
