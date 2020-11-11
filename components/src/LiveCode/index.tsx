@@ -1,10 +1,11 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import Default from './liveCodeScope'
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live'
 
+import defaultScope from './liveCodeScope'
+
 export const LiveCode = ({ scope = {}, code }: Props) => (
-  <LiveProvider scope={{ ...Default, scope }} code={code}>
+  <LiveProvider scope={{ ...defaultScope, ...scope }} code={code}>
     <LiveEditor
       sx={{
         bg: 'secondary.base',
