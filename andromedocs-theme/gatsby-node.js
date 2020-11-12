@@ -1,5 +1,22 @@
 const { createFilePath } = require("gatsby-source-filesystem");
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeSidebar = `
+    type Subitem {
+      label: String!
+      link: String!
+    }
+    type SidebarYaml implements Node {
+      label: String!
+      link: String
+      items: [Subitem]
+    }
+  `
+
+  createTypes(typeSidebar)
+}
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
