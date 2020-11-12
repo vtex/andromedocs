@@ -1,7 +1,7 @@
 export default {
   colors: {
     text: '#4A4A4A',
-    background: '#F8F7FC',
+    background: '#FFFF',
     muted: ['#717786', '#A1A8B3', '#CCCED8', '#E7E9EE', '#F8F7FC', '#FFFFFF'],
     focus: '#FFC4DD',
     primary: {
