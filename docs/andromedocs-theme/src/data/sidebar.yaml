@@ -1,12 +1,12 @@
 # Sidebar navigation
 
-- label: 'Introduction'
-  link: '/'
-- label: 'Getting started'
-  link: '/getting-started'
-- label: "Community:"
+- label: "Getting started"
+  link: "/getting-started"
+- label: "Components"
   items:
-    - label: 'Github'
-      link: https://github.com/vtex/andromedocs
-    - label: "test"
-      link: ""
+    - label: "Guidelines"
+      link: "/components/Guidelines/"
+    - label: "StatusTag"
+      link: "/components/StatusTag/"
+    - label: "LiveCode"
+      link: "/components/LiveCode/"

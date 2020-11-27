@@ -1,0 +1,25 @@
+import { ThemeProvider } from "../../../components/src/theme/Provider";
+import LiveCode from "../../../components/src/LiveCode";
+import StatusTag from "../../../components/src/StatusTag";
+
+# StatusTag
+
+A badge that displays the current status of the component.
+
+## Example
+
+<LiveCode
+  scope={{ ThemeProvider, StatusTag }}
+  code={` <div style={{ width: "fit-content" }}>
+    <StatusTag variant="stable" />
+  </div>`}
+/>
+
+## Props
+
+| Name     | Description              | Type               | Default value | Required? |
+| -------- | ------------------------ | ------------------ | ------------- | --------- |
+| children | content of the component | String             | -             | YES       |
+| variant  | variant of the component | `StatusTagVariant` | -             | YES       |
+
+StatusTagVariant = `'stable' | 'experimental' | 'deprecated'`

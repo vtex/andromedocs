@@ -1,7 +1,43 @@
-# Getting started
+# Andromedocs
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut augue lectus, iaculis ut porttitor ut, vulputate vitae nisi. Cras nec diam dui. Sed quis odio a est aliquet egestas sit amet ut nisi. Nulla ut ligula sollicitudin, suscipit eros consequat, iaculis nisi. Maecenas at velit lacinia sapien vestibulum dapibus vel et lorem. Aenean vitae sem eget enim vulputate varius. Nullam volutpat aliquam nisl blandit porttitor. Pellentesque auctor, dui et gravida luctus, lorem tortor sollicitudin lorem, quis fermentum lorem enim ac nulla. Donec ultricies sodales lectus. Quisque consectetur hendrerit tellus, eget fermentum nisi sollicitudin eu. Vestibulum gravida aliquet nisl sagittis elementum. Sed enim dui, congue at nunc id, feugiat semper ipsum. Morbi egestas efficitur sapien, vel aliquam urna rhoncus nec. Nunc id diam eu odio imperdiet auctor. Proin nec ullamcorper urna. Mauris sollicitudin semper lectus ac bibendum.
+**Andromedocs** provides simple yet flexible tools for documenting Design Systems. This project and its documentation are currently in development and, therefore, are undergoing frequent changes.
 
-Nunc feugiat turpis id congue lobortis. Cras tempus, augue sed posuere porta, nisl diam rutrum tellus, quis aliquet lectus arcu iaculis turpis. Nullam molestie mi vitae nisl vestibulum, vel iaculis metus consectetur. Integer in tellus interdum, venenatis metus quis, mattis risus. Sed quis sagittis purus. Vivamus eu placerat sapien. Cras luctus tincidunt magna sed sodales. Aliquam a mi sem. Vivamus tristique ipsum at sapien efficitur maximus. Vivamus vitae felis at erat condimentum blandit id non dui. Quisque egestas suscipit risus, quis ultricies arcu condimentum et. Curabitur enim risus, sodales semper interdum vitae, congue sit amet magna. Mauris a aliquam erat, sit amet consectetur nisi. Suspendisse blandit, diam in tempus hendrerit, sem magna dignissim erat, sit amet finibus justo nulla nec massa. Integer tellus ipsum, dapibus vel massa eu, malesuada posuere augue.
+## Features
 
-Phasellus vitae scelerisque massa, ut maximus velit. Fusce mollis nunc sit amet sem scelerisque volutpat. Nullam justo diam, dignissim ut dui sed, porttitor scelerisque est. In ex magna, viverra porttitor ligula eget, porta mollis urna. Sed dapibus pretium magna quis molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent neque libero, efficitur eu enim egestas, ultricies sollicitudin ligula. Aliquam erat volutpat. In nec bibendum est. Pellentesque dapibus ac risus sed sagittis.
+- A ready-to-go design system documentation.
+- Document using MDX and React.
+- Built-in Components that helps you document your components.
+- Use theme ui to customize your documentation.
+
+## Getting Started
+
+1. Add our theme to your gatsby project
+   `yarn add andromedocs-theme`
+2. Start documenting!
+
+### Customize navbar
+
+If you wish to customize the navbar, create a file `andromedocs-theme/src/data/sidebar.yaml` then you can customize your navbar following this structure:
+
+```yaml
+- label: "Introduction"
+  link: "/"
+- label: "Components"
+  items:
+    - label: "Guidelines"
+      link: "/components/guidelines/"
+    - label: "LiveCode"
+      link: "/components/LiveCode/"
+```
+
+### Customize the theme
+
+If you wish to customize the theme, create a file `andromedocs-theme/src/gatsby-plugin-theme-ui` and add your theme.
+
+## Contact
+
+If you find any bugs or have any feature suggestions you can open an [issue](https://github.com/vtex/andromedocs/issues) on our repository.
+
+## License
+
+MIT @ VTEX.

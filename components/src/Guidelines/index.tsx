@@ -2,7 +2,7 @@
 import { ReactNode } from 'react'
 import { jsx, Flex, Divider, Box, Text as ThemeUIText } from 'theme-ui'
 
-export const Guidelines = ({ children }: Prop) => <Box>{children}</Box>
+const Guidelines = ({ children }: GuidelinesProps) => <Box>{children}</Box>
 
 const Dos = ({ children, icon = '✅', title = 'Dos' }: Props) => (
   <GuidelinesList icon={icon} title={title}>
@@ -25,14 +25,14 @@ const GuidelinesList = ({ children, icon, title }: Props) => {
           {title}
         </ThemeUIText>
       </Flex>
-      <ul sx={{ listStyleType: 'none', paddingLeft: '28px', marginTop: 3 }}>
+      <Box sx={{ listStyleType: 'none', paddingLeft: '28px', marginTop: 3 }}>
         {children.map((child, index) => (
           <Box key={index}>
             {child}
             <Divider variant="guidelines.divider" />
           </Box>
         ))}
-      </ul>
+      </Box>
     </Box>
   )
 }
@@ -43,7 +43,7 @@ interface Props {
   title: string
 }
 
-interface Prop {
+export interface GuidelinesProps {
   children?: ReactNode
 }
 

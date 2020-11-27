@@ -9,8 +9,9 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^2.24.67",
     "andromedocs-theme": "*",
+    "components": "*",
+    "gatsby": "^2.24.67",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

@@ -9,6 +9,7 @@
   },
   "workspaces": [
     "andromedocs-theme",
-    "docs"
+    "docs",
+    "components"
   ]
 }
