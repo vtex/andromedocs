@@ -1,6 +1,43 @@
 import statusTag from './components/statusTag'
 
 export const theme = {
+  fonts: {
+    body: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+  },
+  styles: {
+    h1: {
+      fontSize: 32,
+      fontFamily: 'body',
+      fontWeight: 'heading',
+      color: 'primary',
+      mt: 4,
+      mb: 2,
+    },
+    h2: {
+      fontSize: 4,
+      fontFamily: 'body',
+      my: 1,
+    },
+    h3: {
+      fontSize: 3,
+      fontFamily: 'body',
+      my: 1,
+    },
+    ul: {
+      fontSize: 2,
+      fontFamily: 'body',
+      my: 3,
+    },
+    ol: {
+      fontSize: 2,
+      fontFamily: 'body',
+      my: 3,
+    },
+    p: {
+      fontSize: 2,
+      fontFamily: 'body',
+    }
+  },
   colors: {
     text: '#4A4A4A',
     background: '#F8F7FC',
@@ -71,11 +108,6 @@ export const theme = {
     },
   },
   statusTag,
-  fonts: {
-    body: 'sans-serif',
-    heading: 'sans-serif',
-    monospace: 'monospace',
-  },
   fontSizes: [12, 14, 16, 20, 24],
   fontWeights: {
     regular: 400,

@@ -1,4 +1,3 @@
-import { ThemeProvider } from "../../../components/src/theme/Provider";
 import LiveCode from "../../../components/src/LiveCode";
 import Guidelines from "../../../components/src/Guidelines";
 
@@ -9,32 +8,15 @@ The Guidelines component describes how a component is expected to be used (Dos) 
 ## Example
 
 <LiveCode
-  scope={{ ThemeProvider, Guidelines }}
+  scope={{ Guidelines }}
   code={`<Guidelines>
-    <Guidelines.Dos icon="✅" title="Dos">
-      <li>Do this!</li>
-      <li>Do that!</li>
-      <li>Do that!</li>
-    </Guidelines.Dos>
-    <Guidelines.Donts icon="❌" title="Dont's">
-      <li>NEVER do this!</li>
-      <li>NEVER do that!</li>
-    </Guidelines.Donts>
-  </Guidelines>`}
+  <Guidelines.Dos>
+    <li>Do this!</li>
+    <li>Do that!</li>
+  </Guidelines.Dos>
+  <Guidelines.Donts>
+    <li>NEVER do this!</li>
+    <li>NEVER do that!</li>
+  </Guidelines.Donts>
+</Guidelines>`}
 ></LiveCode>
-
-## Props
-
-### Guidelines.Dos
-
-| Name  | Description          | Type      | Default value      | Required? |
-| ----- | -------------------- | --------- | ------------------ | --------- |
-| title | title of the section | String    | `'Dos'`            | NO        |
-| icon  | icon of the section  | ReactNode | :heavy_check_mark: | NO        |
-
-### Guidelines.Donts
-
-| Name  | Description          | Type      | Default value | Required? |
-| ----- | -------------------- | --------- | ------------- | --------- |
-| title | title of the section | String    | `'Don'ts'`    | NO        |
-| icon  | icon of the section  | ReactNode | :x:           | NO        |

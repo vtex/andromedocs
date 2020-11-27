@@ -1,9 +1,9 @@
-import React from "react";
+/** @jsx jsx */
 
 import Header from "../header";
 import Sidebar from "../sidebar";
 import Footer from "../footer";
-import { Box, Flex, Text } from "theme-ui";
+import { jsx, Flex, Text } from "theme-ui";
 import { ThemeProvider } from "../../../../components/src/theme";
 
 const Layout = ({ children, title }) => (
